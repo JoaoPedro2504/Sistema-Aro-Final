@@ -1,0 +1,25 @@
+ALTERACOES NOS RELATORIOS PDF - BANCO ARO
+
+Arquivos alterados:
+- main.py
+- Templates/historico.html
+
+O que mudou:
+1. Extrato:
+   - Agora consulta e exibe o tipo e a classificacao do lancamento.
+   - PDF em paisagem, com tabela organizada e cores.
+   - Inclui periodo, saldo anterior, receitas, despesas, saldo final e movimentacoes.
+   - Cada linha mostra data, descricao, tipo/classificacao, entrada, saida e saldo acumulado.
+
+2. Relatorio de emprestimos:
+   - PDF com cabecalho visual, resumo geral e cartoes de informacao.
+   - Inclui quantidade de contratos, valor liberado, total previsto e juros previstos.
+   - Cada emprestimo mostra data, exercicio, taxa mensal, valor recebido, numero de parcelas,
+     valor da parcela, ultima parcela, total previsto e classificacao de risco.
+
+Observacoes:
+- Os PDFs sao gerados pelo proprio sistema quando o usuario clica nos botoes de download.
+- Este pacote contem a alteracao do codigo; para validar com dados reais, execute o projeto
+  no ambiente que possui as dependencias e a conexao configurada com o banco Firebird.
+- Nao foi possivel gerar um relatorio real nesta etapa porque o banco e a conexao local
+  do computador do projeto nao foram executados aqui.
